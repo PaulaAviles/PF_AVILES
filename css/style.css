@@ -1,0 +1,155 @@
+/* import fonts */
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,400;1,500&display=swap";
+.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: solid 1px; }
+  .img:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04); }
+
+.galeria__mixta {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: minmax(300px);
+  gap: 30px;
+  padding: 30px;
+  grid-auto-flow: dense; }
+
+section article div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+/* reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
+
+/**navbar**/
+.menu {
+  display: flex;
+  justify-content: right; }
+
+/*bg  de la pagina de inicio*/
+.background {
+  height: 90vh;
+  background: url(../assets/images/bg_farol.webp);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.texto__banner {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px; }
+
+/*page contacto*/
+.mapa__ubicacion {
+  margin-top: 40px;
+  margin-left: 40px; }
+
+.texto__ubicacion {
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif; }
+
+.div__ubicacion {
+  justify-content: center;
+  padding-top: 30px;
+  background-image: url(../assets/images/bg_flores.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex; }
+
+.bg__contacto {
+  background: url(../assets/images/background2jpg.webp);
+  background-attachment: fixed;
+  height: 90vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.contenedor__formulario {
+  background: rgba(0, 0, 0, 0.4);
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  padding: 4.5em 3em;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px -5px black;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.boton__enviar {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  background: darkgrey;
+  color: black;
+  border-radius: 3px;
+  cursor: pointer; }
+
+/*page servicios*/
+.texto__servicios {
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif; }
+
+.div__servicios {
+  justify-content: center;
+  padding-top: 30px;
+  background-image: url(../assets/images/imagen_mano.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex; }
+
+.div__servicios__cards {
+  justify-content: center;
+  background-image: url(../assets/images/imagen_mano.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex; }
+
+/* page biografia */
+.div__biografia {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px; }
+
+.bg_bio {
+  background-image: url(../assets/images/paisaje_mar_bgjpeg.webp);
+  background-attachment: fixed;
+  height: 90vh;
+  background-size: cover;
+  display: flex; }
+
+/* footer */
+.texto__footer {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+.footer__redes {
+  color: white;
+  text-align: center; }
+
+.conteiner__footer {
+  display: flex;
+  justify-content: center; }
+
+a:hover {
+  color: whitesmoke; }
+
+@media (min-width: 600px) {
+  .ancho {
+    grid-column: span 2; }
+  .alto {
+    grid-row: span 2; } }
